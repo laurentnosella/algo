@@ -18,11 +18,19 @@ def tri_insertion(A: list):
     :param A: tableau de int
     :return: A:liste le tableau trié
     """
-    #count = 0                                 # question 3
+    count = 0                                 # question 3
 
     ##### à coder #####
 
+    for j in range(1, len(A)):
+        i = j-1
+        cle = A[j]
+        while i >= 0 and A[i]>cle:
+            A[i+1] = A[i]
+            i = i-1
+            count += 1
 
+        A[i+1]=cle
 
 
 
@@ -35,8 +43,8 @@ def tri_insertion(A: list):
 
     ##### fin code #####
 
-    #print("taille A :", len(A))                # question 3
-    #print("nombre d'execution :", count)         # question 3
+    print("taille A :", len(A))                # question 3
+    print("nombre d'execution :", count)         # question 3
     ######
     return A
 
