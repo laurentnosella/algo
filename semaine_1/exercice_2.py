@@ -35,12 +35,6 @@ def tri_insertion(A: list):
 
 
 
-
-
-
-
-
-
     ##### fin code #####
 
     print("taille A :", len(A))                # question 3
